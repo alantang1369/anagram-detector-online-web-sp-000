@@ -11,7 +11,7 @@ class Anagram
     array = list_words.find_all do |element|
                self.word.split("").sort == element.split("").sort
     end
-    binding.pry
+   
     match = array || []
   end  
       
