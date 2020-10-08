@@ -1,4 +1,5 @@
 # Your code goes here!
+require 'pry'
 class Anagram 
   attr_accessor :word 
   def initialize(word)
@@ -10,6 +11,7 @@ class Anagram
     array = list_words.find do |element|
                self.word.split.sort == element.split.sort
     end
+    binding.pry
     match = array || []
   end  
       
